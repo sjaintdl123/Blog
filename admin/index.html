@@ -1,0 +1,419 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+      
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+                <!-- Brand -->
+                <div class="container-fluid">
+                <a href="#" class="nav-link float-left" id="open-sidebar" ><i class="fa fa-bars" style="color:white"></i></a>
+                <a class="navbar-brand text-xs-center  text-uppercase" href="index.html" >Admin</a>   
+                
+                <!-- Toggler/collapsibe Button -->
+                <a class="navbar-toggler" data-toggle="collapse" data-target="#h">
+                  <i class="fa fa-ellipsis-v" style="color:white"></i>
+                </a>
+                
+                <!-- Navbar links -->
+                <div class="collapse in navbar-collapse" id="">
+                       
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                            <form id="demo-2" class="form-inline " style="margin-top:5px;">
+                                    <input type="search" placeholder="Search" class="form-control">
+                             </form> 
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                             <i class="fa fa-bell"></i>
+                         </a>
+                    </li>
+                    <!--Envelop Dropdown-->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-envelope"></i>
+                    </a>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                            <li class="dropdown-header">Messages</li>
+                        </ul>
+                    </li> 
+                    <!--Profile DropDown-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user"></i>
+                      </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#" class="dropdown-item"><i class="fa fa-user"></i>User Profile</a></li>
+                            <li><a href="#" class="dropdown-item"><i class="fa fa-cog"></i>Setting</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li ><a href="#" class="dropdown-item"><i class="fa fa-power-off"></i>Logout</a></li>
+                          </ul>
+                      </li> 
+                  </ul>
+                 
+                </div>
+                
+                </div> 
+                <ul class="navbar-nav mx-auto">
+                        <li>
+                                <form id="main-search" class="form-inline  d-md-none " style="margin-top:5px;">
+                                        <input type="search" placeholder="Search" class="form-control">
+                                 </form> 
+                        </li>
+                     </ul>
+              </nav>
+
+              <nav class="main-menu card-3" id="sidebar">
+                  
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-home fa-2x"></i>
+                                <span class="nav-text">
+                                    Dashboard
+                                </span>
+                            </a>
+                          
+                        </li>
+                        <li class="has-subnav ">
+                                <a href="#" data-toggle="collapse" data-target="#open-apps">
+                                <i class="fa fa-th fa-2x"></i>
+                                <span class="nav-text">
+                                    Apps
+                                </span>
+                               
+                            </a>
+                            <ul class="navbar-nav collapse" id="open-apps">
+                                <li class="nav-item"><a href="App/chats.html">Chats</a></li>
+                                <li class="nav-item"><a href="#">Calender</a></li>
+                                <li class="nav-item"><a href="#">Weather</a></li>
+                                <li class="nav-item"><a href="#">Contect</a></li>
+                            </ul>
+                            
+                            
+                        </li>
+                        <li class="has-subnav">
+                            <a href="#" data-toggle="collapse" data-target="#open-mail">
+                                <i class="fa fa-envelope"></i>
+                                <span class="nav-text">
+                                    Email
+                                </span>
+                            </a>
+                            <ul class="navbar-nav collapse" id="open-mail">
+                                <li class="nav-item"><a href="../admin/App/email/inbox.html">Inbox</a></li>
+                                <li class="nav-item"><a href="#"> Sent Mail</a></li>
+                                <li class="nav-item"><a href="#">Draft</a></li>
+                                
+                            </ul>
+                            
+                        </li>
+                        <li class="has-subnav">
+                                <a href="#">
+                               <i class="fa fa-calendar fa-2x"></i>
+                                <span class="nav-text">
+                                    Widget
+                                </span>
+                            </a>
+                        </li>
+                        <li class="has-subnav">
+                            <a href="#" data-toggle="collapse" data-target="#open-pages">
+                               <i class="fa fa-folder-open fa-2x"></i>
+                                <span class="nav-text">
+                                    Pages
+                                </span>
+                            </a>
+                            <ul class="navbar-nav collapse" id="open-pages">
+                                    <li class="nav-item"><a href="../admin/Error Page/404.html">Error 404</a></li>
+                                    <li class="nav-item"><a href="../admin/Error Page/505.html">Error 505</a></li>
+                                
+                            </ul>
+                           
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-bar-chart-o fa-2x"></i>
+                                <span class="nav-text">
+                                    Graphs and Statistics
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="collapse" data-target="#open-post">
+                                <i class="fa fa-sticky-note fa-2x"></i>
+                                <span class="nav-text">
+                                   Post
+                                </span>
+                            </a>
+                            <ul class="navbar-nav collapse" id="open-post">
+                                <li class="nav-item"><a href="../admin/addpost/singlepost.html">Single Post</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                           <a href="#">
+                               <i class="fa fa-table fa-2x"></i>
+                                <span class="nav-text">
+                                    Tables
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                                <i class="fa fa-map-marker fa-2x"></i>
+                                <span class="nav-text">
+                                    Maps
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               <i class="fa fa-info fa-2x"></i>
+                                <span class="nav-text">
+                                    Documentation
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="main main-content " >
+
+                    <div class="container-fluid">
+                        <h5>Dashboard</h5>
+                        <div class="row ">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-2">
+                                <div class="card card-3">
+                                    <div class="card-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-xs-4 text-center">
+                                                    <span class="align-middle font-weight-bold" >1,98,800</span>
+                                                    <span class="align-bottom font-weight-light name d-flex flex-column ">Visitor</span>     
+                                                </div>
+                                                <div class="col-xs-8 ml-auto">
+                                                    <i class="fa fa-group fa-3x "></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-2">
+                                    <div class="card card-3">
+                                        <div class="card-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-xs-4 text-center">
+                                                        <span class="align-middle font-weight-bold" >47.8%</span>
+                                                        <span class="align-bottom font-weight-light name d-flex flex-column ">Growth Rate</span>     
+                                                    </div>
+                                                    <div class="col-xs-8 ml-auto">
+                                                        <i class="fa fa-bar-chart fa-3x"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-2">
+                                        <div class="card card-3">
+                                            <div class="card-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-xs-4 text-center">
+                                                            <span class="align-middle font-weight-bold" >6,900</span>
+                                                            <span class="align-bottom font-weight-light name d-flex flex-column ">Total Likes</span>     
+                                                        </div>
+                                                        <div class="col-xs-8 ml-auto">
+                                                            <i class="fa fa-thumbs-o-up  fa-3x"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-2">
+                                            <div class="card card-3">
+                                                <div class="card-body">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-xs-4 text-center">
+                                                                <span class="align-middle font-weight-bold" >15,98,800</span>
+                                                                <span class="align-bottom font-weight-light name d-flex flex-column ">Total Collection</span>     
+                                                            </div>
+                                                            <div class="col-xs-8 ml-auto">
+                                                                <i class="fa fa-inr fa-3x"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <!--Charts-->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12 mt-2">
+                                    <div class="card card-3">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Revenue Comparison</h4>
+                                            <p style="text-align:center">You have to pay</p>
+                                            <canvas id="pieChart" style="max-width:1080px;height:800px"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-sm-12 mt-2">
+                                    <div class="card card-3">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Visitor Overview Chart</h4>
+                                            <p style="text-align:center">You have to pay</p>
+                                            <canvas id="myChart" style="max-width:1080px;height:800px"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                        
+                                
+                                <div class="col-lg-4 col-sm-12 mt-2">
+                                    <div class="card card-3">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Goal Compilation</h4>
+                                            <p style="text-align:center">You have to pay</p>
+                                            <canvas id="lineChart" style="max-width:1080px;height:800px"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                            
+                                    
+                            </div>
+                        </div>
+                        <!--Charts End-->
+
+                        <!--Another Charts And Tables-->
+                        <div class="container-fluid">
+                            <div class="row">
+                                
+                                <div class="col-lg-6 col-sm-12 mt-2">
+                                    <div class="card card-3"  style="height:400px;">
+                                        <div class="card-body">
+                                            <div class="float-left">
+                                            <h5>Social Campagins</h5>
+                                            </div>
+                                            <div class="float-right">
+                                                <a class="float-left d-inline-block" href="#">
+                                                    <i class="fa fa-refresh"></i>
+                                                </a>
+                                                <a class="float-left d-inline-block " data-toggle="" href="#">
+                                                        <i class="fa fa-search-plus"></i>
+                                                </a>
+                                                <div class="float-left d-inline-block">
+                                                    <a class="" data-toggle="dropdown" href="#"><i class="fa fa-ellipsis-v"></i></a>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li class="dropdown-item"><a href="#">Edit</a></li>
+                                                        <li class="dropdown-item"><a href="#">Delete</a></li>
+                                                        <li class="dropdown-item"><a href="#">New</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive" style="max-height: 400px;">
+                                            <table class="table table-striped table-hover" id="socialCapagins" >
+                                                <thead>
+                                                    <th>Capagins</th>
+                                                    <th>Client</th>
+                                                    <th>Change</th>
+                                                    <th>Budget</th>
+                                                    <th>Status</th>
+                                                </thead>
+                                                <tbody >
+                                                    <tr>
+                                                        <td>Facebook</td>
+                                                        <td>John</td>
+                                                        <td class="text-success"><i class="fa fa-caret-up"></i>23%</td>
+                                                        <td><i class="fa fa-inr">250</i></td>
+                                                        <td><span class="badge badge-pill badge-primary">Active</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Twittor</td>
+                                                        <td>Shashank</td>
+                                                        <td class="text-success"><i class="fa fa-caret-up"></i>23%</td>
+                                                        <td><i class="fa fa-inr">250</i></td>
+                                                        <td><span class="badge badge-pill badge-danger">Disable</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Instagram</td>
+                                                        <td>Rahat</td>
+                                                        <td class="text-success"><i class="fa fa-caret-up"></i>23%</td>
+                                                        <td><i class="fa fa-inr">250</i></td>
+                                                        <td><span class="badge badge-pill badge-primary">Active</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Youtube </td>
+                                                        <td>Kundan</td>
+                                                        <td class="text-danger"><i class="fa fa-caret-down"></i>-3%</td>
+                                                        <td><i class="fa fa-inr">250</i></td>
+                                                        <td><span class="badge badge-pill badge-danger">Disable</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Spoofy </td>
+                                                        <td>Prem</td>
+                                                        <td class="text-danger"><i class="fa fa-caret-down"></i>-3%</td>
+                                                        <td><i class="fa fa-inr">250</i></td>
+                                                        <td><span class="badge badge-pill badge-dark">Hold</span></td>
+                                                    </tr>
+                                                        
+                                                </tbody>
+                                            </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-sm-12 mt-2">
+                                    <div class="card card-3" style="min-height:400px;">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Goal Compilation</h4>
+                                            <p style="text-align:center">You have to pay</p>
+                                            <canvas id="doughnutChart" style="max-width:1080px;height:1080px"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-3 col-sm-12 mt-2">
+                                    <div class="card card-3">
+                                        <div class="card-body"  style="min-height:400px;">
+                                            <h4 class="card-title">Goal Compilation</h4>
+                                            <p style="text-align:center">You have to pay</p>
+                                            <canvas id="radarChart" style="max-width:1080px;height:1080px"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!--End of Charts And Table-->
+                        
+
+            <!--End of main-->
+                </div>
+        
+               
+
+    </body>
+</html>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/js/mdb.min.js"></script>      
+<script src="js/jquery.min.js"></script>
+<script src="js/main_script.js"></script>
+       

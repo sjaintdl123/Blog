@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Inbox</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="../../summernote-master/dist/summernote.css">
+	  <script src="../../summernote-master/dist/summernote.js"></script>
+  	<link rel="stylesheet" href="../../css/style.css">
+	  <link rel="stylesheet" href="email_nav.css">
+	  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+	<div class="main main-content">
+		<div class="container-fluid">
+		<h4>Inbox</h4>
+		<div class="row inbox-panel card-3">
+			<div class="col-sm-12">
+
+				<div class="row">
+					<!--Email Sidebar-->
+					<div class="col-md-3  hidden-sm hidden-xs">
+						<button type="button"  data-toggle="modal" data-target="#compose" class="btn btn-primary btn-block">Compose</button>
+						<ul class="inbox-nav list-unstyled">
+							
+							<li class="active"><a href="#"><span class="fa fa-inbox"></span>Inbox<span class="badge badge-pill badge-primary pull-right">15</span></a></li>
+							<li ><a href="#"><span class="fa fa-envelope-open-o"></span>Sent Mail</a></li>
+							<li ><a href="#"><span class="fa fa-bookmark-o"></span>Important</a></li>
+							<li ><a href="#"><span class="fa fa-folder-o"></span>Draft<span class="badge badge-pill badge-danger pull-right">15</span></a></li>
+							<li ><a href="#"><span class="fa fa-trash-o"></span>Trash</a></li>
+							
+							<li><h4>Label</h4></li>	
+							<li><a href="#"><span class="fa fa-square"></span>Work</a></li>
+							<li><a href="#"><span class="fa fa-square"></span>Design</a></li>
+							<li><a href="#"><span class="fa fa-square"></span>Family</a></li>
+							<li><a href="#"><span class="fa fa-square"></span>Friends</a></li>
+							<li><a href="#"><span class="fa fa-square"></span>Office</a></li>
+							
+							<li><h4>Online</h4></li>
+							<li class="list-group"><a href="#" class="list-group-item"><img src="a.jpg" class="online-image" alt="none"></img>Shashank Jain</a></li>
+							<li class="list-group"><a href="#" class="list-group-item"><img src="a.jpg" class="ofline-image" alt="none"></img>Shashank Jain</a></li>
+							
+						</ul>
+					</div>
+
+					<!--End of Email Sidebar-->
+
+					<!--Inbox Message List-->
+					<div class="col-md-9 col-sm-12 ">
+
+						<button type="button"  data-toggle="modal" data-target="#compose" class="btn btn-primary btn-block visible-sm visible-xs ">Compose</button>
+						
+						<div class="row" style="margin-top:10px;">
+							<form role="search" class="inline-block pull-right" style="max-width:300px;margin-right:20px;">
+								<div class="input-group">
+									<input class="form-control" type="text" placeholder="Search "><span class="input-group-btn">
+									<button type="button" class="btn btn-default" data-toggle="collaspe" data-target="#search-inbox"><i class="fa fa-search"></i></button></span>
+								</div>
+							</form>
+						
+						</div>
+						<!--Mail Menu-->
+						<div class="row">
+							<div class="col-sm-12">
+																	
+									<div class="btn group">
+										<input class="form-check-input" type="checkbox" vlaue="All">
+
+									</div>
+									<div class="btn-group">
+										<a data-toggle="dropdown" href="#" class="" aria-expanded="false">All<i class="fa fa-angle-down "></i></a>
+											<ul class="dropdown-menu">
+												<li><a href="#"> None</a></li>
+											    <li><a href="#"> Read</a></li>
+												<li><a href="#"> Unread</a></li>
+											</ul>						
+									</div>
+									<div class="btn-group">
+										<a data-toggle="dropdown" href="#" class="" aria-expanded="false">Move To<i class="fa fa-angle-down "></i></a>
+											<ul class="dropdown-menu">
+												<li><a href="#"> Personal</a></li>
+											    <li><a href="#"> Social</a></li>
+											    <li class="divider"></li>
+												<li><a href="#"> Promotional</a></li>
+												<li class="divider"></li>
+												<li><a href="#">Update</a></li>
+											</ul>						
+									</div>
+									<div class="btn-group ">
+										<a data-toggle="dropdown" href="#" class="" aria-expanded="false">More<i class="fa fa-angle-down "></i></a>
+											<ul class="dropdown-menu">
+												<li><a href="#"> <span class="fa fa-pencil"></span>Mark As Read</a></li>
+											    <li><a href="#"><span class="fa fa-ban"></span> Spam</a></li>
+											    <li class="divider"></li>
+												<li><a href="#"><span class="fa fa-trash-o"></span> Delete</a></li>
+											</ul>						
+									</div>
+
+									<ul class="unstyled pull-right pagination-btn" >
+										<li><span>1-10 of 234</span></li>
+										<li>
+											<a class="" href="#"><i class="fa fa-angle-left  pagination-left"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa fa-angle-right pagination-right"></i></a>
+										</li>
+									</ul>
+									
+									
+								</div>
+						</div>
+						<!--End of mail Menu-->
+						<!--Main Message-->
+						<div class="table-responsive">
+							<table class=" table table-hover">
+								<tbody>
+									<tr class="">
+										<td class="inbox-small-cells">
+												<input class="form-check-input" type="checkbox" id="inbox-check">
+										</td>
+										<td class="inbox-small-cells"><i class="fa fa-star-o "></i></td>
+										<td class="view-message">Shashank<span class="label label-primary pull-right">New</span></td>
+										<td class="view-message">Hello,How are you</td>
+										<td class="view-message text-right">
+											<i class="fa fa-paperclip"></i>
+											<span>April 1</span>
+										</td>
+									</tr>
+									<tr class="read">
+										<td class="inbox-small-cells">
+												<input class="form-check-input" type="checkbox" id="inbox-check">
+										</td>
+										<td class="inbox-small-cells"><i class="fa fa-star-o "></i></td>
+										<td class="view-message">Shashank<span class="label label-primary pull-right">New</span></td>
+										<td class="view-message">Hello,How are you</td>
+										<td class="view-message text-right">
+											<i class="fa fa-paperclip"></i>
+											<span>April 1</span>
+										</td>
+									</tr>
+																		<tr class="">
+										<td class="inbox-small-cells">
+												<input class="form-check-input" type="checkbox" id="inbox-check">
+										</td>
+										<td class="inbox-small-cells"><i class="fa fa-star-o "></i></td>
+										<td class="view-message">Shashank<span class="label label-primary pull-right">New</span></td>
+										<td class="view-message">Hello,How are you</td>
+										<td class="view-message text-right">
+											<i class="fa fa-paperclip"></i>
+											<span>April 1</span>
+										</td>
+									</tr>									<tr class="">
+										<td class="inbox-small-cells">
+												<input class="form-check-input" type="checkbox" id="inbox-check">
+										</td>
+										<td class="inbox-small-cells"><i class="fa fa-star-o "></i></td>
+										<td class="view-message">Shashank<span class="label label-primary pull-right">New</span></td>
+										<td class="view-message">Hello,How are you</td>
+										<td class="view-message text-right">
+											<i class="fa fa-paperclip"></i>
+											<span>April 1</span>
+										</td>
+									</tr>
+								    <tr class="read">
+										<td class="inbox-small-cells">
+												<input class="form-check-input" type="checkbox" id="inbox-check">
+										</td>
+										<td class="inbox-small-cells"><i class="fa fa-star-o "></i></td>
+										<td class="view-message">Shashank<span class="label label-primary pull-right">New</span></td>
+										<td class="view-message">Hello,How are you</td>
+										<td class="view-message text-right">
+											<i class="fa fa-paperclip"></i>
+											<span>April 1</span>
+										</td>
+									</tr>
+									<tr class="read">
+										<td class="inbox-small-cells">
+												<input class="form-check-input" type="checkbox" id="inbox-check">
+										</td>
+										<td class="inbox-small-cells"><i class="fa fa-star-o "></i></td>
+										<td class="view-message">Shashank<span class="label label-primary pull-right">New</span></td>
+										<td class="view-message">Hello,How are you</td>
+										<td class="view-message text-right">
+											<i class="fa fa-paperclip"></i>
+											<span>April 1</span>
+										</td>
+									</tr>
+									<tr class="read">
+										<td class="inbox-small-cells">
+												<input class="form-check-input" type="checkbox" id="inbox-check">
+										</td>
+										<td class="inbox-small-cells"><i class="fa fa-star-o "></i></td>
+										<td class="view-message">Shashank<span class="label label-primary pull-right">New</span></td>
+										<td class="view-message">Hello,How are you</td>
+										<td class="view-message text-right">
+											<i class="fa fa-paperclip"></i>
+											<span>April 1</span>
+										</td>
+									</tr>
+									<tr class="read">
+										<td class="inbox-small-cells">
+												<input class="form-check-input" type="checkbox" id="inbox-check">
+										</td>
+										<td class="inbox-small-cells"><i class="fa fa-star-o "></i></td>
+										<td class="view-message">Shashank<span class="label label-primary pull-right">New</span></td>
+										<td class="view-message">Hello,How are you</td>
+										<td class="view-message text-right">
+											<i class="fa fa-paperclip"></i>
+											<span>April 1</span>
+										</td>
+									</tr>
+									<tr class="read">
+										<td class="inbox-small-cells">
+												<input class="form-check-input" type="checkbox" id="inbox-check">
+										</td>
+										<td class="inbox-small-cells"><i class="fa fa-star-o "></i></td>
+										<td class="view-message">Shashank<span class="label label-primary pull-right">New</span></td>
+										<td class="view-message">Hello,How are you</td>
+										<td class="view-message text-right">
+											<i class="fa fa-paperclip"></i>
+											<span>April 1</span>
+										</td>
+									</tr>
+									<tr class="">
+										<td class="inbox-small-cells">
+												<input class="form-check-input" type="checkbox" id="inbox-check">
+										</td>
+										<td class="inbox-small-cells"><i class="fa fa-star-o "></i></td>
+										<td class="view-message">Shashank<span class="label label-primary pull-right">New</span></td>
+										<td class="view-message">Hello,How are you</td>
+										<td class="view-message text-right">
+											<i class="fa fa-paperclip"></i>
+											<span>April 1</span>
+										</td>
+									</tr>
+									<tr class="read">
+										<td class="inbox-small-cells">
+												<input class="form-check-input" type="checkbox" id="inbox-check">
+										</td>
+										<td class="inbox-small-cells"><i class="fa fa-star-o "></i></td>
+										<td class="view-message">Shashank<span class="label label-primary pull-right">New</span></td>
+										<td class="view-message">Hello,How are you</td>
+										<td class="view-message text-right">
+											<i class="fa fa-paperclip"></i>
+											<span>April 1</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+					<!--End ofInbox Message List-->
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="modal fade" id="compose" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Compose Email</h4>
+					</div>
+
+					<div class="modal-body" >
+						<form class="form-horizontal" action="#" id="compose-mail">
+								<div style="margin:auto;padding:10px">
+								<div class="form-group">
+									<label class="label-control col-sm-2 ">To</label>
+									<div class="col-sm-10">
+										<input class="form-control" type="email" placeholder="Enter Email">
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<label class="label-control col-sm-2">Subject</label>
+									<div class="col-sm-10">
+										<input class="form-control" type="text" placeholder="Enter Subject"> 
+									</div>	
+								</div>
+
+								<div class="form-group">
+								
+								<textarea class="form-control col-sm-12"  placeholder="Enter Message"style="height:200px;resize:none;"></textarea>
+								</div>
+								
+								<div class="form-group">
+									<button type="submit" class="btn btn-primary pull-left">Send</button>
+									<button type="reset" class="btn btn-danger" style="margin-left:10px;">Reset</button>
+								<!--	<input id="uploadFile" placeholder="Choose File" disabled="disabled">-->
+									<div class="fileupload btn btn-primary">
+										<span>Upload</span>
+										<input type="file" class="upload" id="uploadbtn" multiple>
+									</div>
+									
+								</div>
+								
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
+<script>
+    $(document).ready(function() {
+        $('#summernote').summernote();
+    });
+  </script>
+  <script>
+	  document.getElementById('uploadbtn').onchange=function(){
+		  document.getElementById('uploadFile').value=this.value;
+	  }
+  </script>

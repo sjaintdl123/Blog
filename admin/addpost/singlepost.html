@@ -1,0 +1,247 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        
+    </head>
+    <body>
+      
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+                <!-- Brand -->
+                <div class="container-fluid">
+                <a href="#" class="nav-link float-left" id="open-sidebar" ><i class="fa fa-bars" style="color:white"></i></a>
+                <a class="navbar-brand text-xs-center  text-uppercase" href="index.html" >Admin</a>   
+                
+                <!-- Toggler/collapsibe Button -->
+                <a class="navbar-toggler" data-toggle="collapse" data-target="#h">
+                  <i class="fa fa-ellipsis-v" style="color:white"></i>
+                </a>
+                
+                <!-- Navbar links -->
+                <div class="collapse in navbar-collapse" id="">
+                       
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                            <form id="demo-2" class="form-inline " style="margin-top:5px;">
+                                    <input type="search" placeholder="Search" class="form-control">
+                             </form> 
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                             <i class="fa fa-bell"></i>
+                         </a>
+                    </li>
+                    <!--Envelop Dropdown-->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-envelope"></i>
+                    </a>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                            <li class="dropdown-header">Messages</li>
+                        </ul>
+                    </li> 
+                    <!--Profile DropDown-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user"></i>
+                      </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#" class="dropdown-item"><i class="fa fa-user"></i>User Profile</a></li>
+                            <li><a href="#" class="dropdown-item"><i class="fa fa-cog"></i>Setting</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li ><a href="#" class="dropdown-item"><i class="fa fa-power-off"></i>Logout</a></li>
+                          </ul>
+                      </li> 
+                  </ul>
+                 
+                </div>
+                
+                </div> 
+                <ul class="navbar-nav mx-auto">
+                        <li>
+                                <form id="main-search" class="form-inline  d-md-none " style="margin-top:5px;">
+                                        <input type="search" placeholder="Search" class="form-control">
+                                 </form> 
+                        </li>
+                     </ul>
+              </nav>
+
+              <nav class="main-menu card-3" id="sidebar">
+                  
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-home fa-2x"></i>
+                                <span class="nav-text">
+                                    Dashboard
+                                </span>
+                            </a>
+                          
+                        </li>
+                        <li class="has-subnav ">
+                                <a href="#" data-toggle="collapse" data-target="#open-apps">
+                                <i class="fa fa-th fa-2x"></i>
+                                <span class="nav-text">
+                                    Apps
+                                </span>
+                               
+                            </a>
+                            <ul class="navbar-nav collapse" id="open-apps">
+                                <li class="nav-item"><a href="App/chats.html">Chats</a></li>
+                                <li class="nav-item"><a href="#">Calender</a></li>
+                                <li class="nav-item"><a href="#">Weather</a></li>
+                                <li class="nav-item"><a href="#">Contect</a></li>
+                            </ul>
+                            
+                            
+                        </li>
+                        <li class="has-subnav">
+                            <a href="#" data-toggle="collapse" data-target="#open-mail">
+                                <i class="fa fa-envelope"></i>
+                                <span class="nav-text">
+                                    Email
+                                </span>
+                            </a>
+                            <ul class="navbar-nav collapse" id="open-mail">
+                                <li class="nav-item"><a href="../admin/App/email/inbox.html">Inbox</a></li>
+                                <li class="nav-item"><a href="#"> Sent Mail</a></li>
+                                <li class="nav-item"><a href="#">Draft</a></li>
+                                
+                            </ul>
+                            
+                        </li>
+                        <li class="has-subnav">
+                                <a href="#">
+                               <i class="fa fa-calendar fa-2x"></i>
+                                <span class="nav-text">
+                                    Widget
+                                </span>
+                            </a>
+                        </li>
+                        <li class="has-subnav">
+                            <a href="#" data-toggle="collapse" data-target="#open-pages">
+                               <i class="fa fa-folder-open fa-2x"></i>
+                                <span class="nav-text">
+                                    Pages
+                                </span>
+                            </a>
+                            <ul class="navbar-nav collapse" id="open-pages">
+                                    <li class="nav-item"><a href="../admin/Error Page/404.html">Error 404</a></li>
+                                    <li class="nav-item"><a href="../admin/Error Page/505.html">Error 505</a></li>
+                                
+                            </ul>
+                           
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-bar-chart-o fa-2x"></i>
+                                <span class="nav-text">
+                                    Graphs and Statistics
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-font fa-2x"></i>
+                                <span class="nav-text">
+                                   Quotes
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                               <i class="fa fa-table fa-2x"></i>
+                                <span class="nav-text">
+                                    Tables
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                                <i class="fa fa-map-marker fa-2x"></i>
+                                <span class="nav-text">
+                                    Maps
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               <i class="fa fa-info fa-2x"></i>
+                                <span class="nav-text">
+                                    Documentation
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="main main-content " >
+                    <div class="container-fluid">
+                            <h5>Add Post</h5>
+                        <div class="card card-3">
+                            <div class="card-body">
+                                
+                                
+                                <form action="#" method="post">
+                                    <div class="form-row">
+                                        <div class="form-group col-sm-3">
+                                            <label for="ID">ID</label>
+                                            <input class="form-control" type="text" name="id" aria-describedby="post_id" readonly>
+                                            <small id="post_id" class="form-text text-muted">
+                                                <i class="fa fa-lock"></i>
+                                                Post ID will auto generate
+                                            </small>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                            <label for="selectCatagory">Select Catagory</label>
+                                            <select id="selectCatagory" class="form-control">
+                                                <option value="select">Select Catagory</option>
+                                                <option value="mobile">Mobile</option>
+                                                <option value="laptop">Laptop</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                            <label for="selectCompany">Select Company</label>
+                                            <select id="selectCompany" class="form-control">
+                                                <option value="select">Select Company</option>
+                                                <option value="apple">Apple</option>
+                                                <option value="lenove">Lenovo</option>    
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                            <label for="selectModal">Select Modal</label>
+                                            <select id="selectModal" class="form-control">
+                                                <option value="select">Select Modal</option>
+                                                <option value="apple">Iphone x</option>
+                                                <option value="lenove">Iphone 9</option>    
+                                            </select>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-sm-3">
+                                                <label>Description</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </body>
+        </html>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/js/mdb.min.js"></script>      
+<script src="../js/jquery.min.js"></script>
+<script src="../js/main_script.js"></script>
+       

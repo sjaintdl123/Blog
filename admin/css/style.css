@@ -1,0 +1,780 @@
+                            /**************************
+                             *                        *
+                             *                        *
+                             *       Admin CSS        *
+                             *                        *
+                             *                        *
+                             **************************/
+
+/*-------------------------------------------------------------------------
+                        Top Navigation Bar
+---------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-ThinItalic-webfont.eot');
+    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-ThinItalic-webfont.woff') format('woff'),
+         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
+         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    
+  }
+.navbar {
+    background:#444;
+    -o-transition: all .6s;
+    -moz-transition: all .6s;
+    -webkit-transition: all .6s;
+    -ms-transition: all .6s;
+    transition: all .6s;
+    backface-visibility: hidden;
+}
+ 
+.navbar-dark .navbar-nav {
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+ 
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    border: 0;
+}
+ 
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+ 
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #fff;
+    outline: 0;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.navbar input {
+	outline: none;
+}
+
+.navbar input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+
+.navbar input::-webkit-search-decoration,
+
+.navbar input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+
+.navbar input[type=search] {
+	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 150px;
+    height:10px;
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+.navbar input[type=search]:focus {
+	width: 220px;
+	background-color: #fff;
+	border-color: #66CC75;
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+
+.navbar input:-moz-placeholder {
+	color: #999;
+}
+
+.navbar input::-webkit-input-placeholder {
+	color: #999;
+}
+@media (max-width:768px)
+{
+    .navbar input[type=search] {
+        background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+        border: solid 1px #ccc;
+        padding: 9px 10px 9px 32px;
+        width: 150px;
+        height:15px;
+        -webkit-border-radius: 10em;
+        -moz-border-radius: 10em;
+        border-radius: 10em;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        transition: all .5s;
+    }
+    
+    .navbar input[type=search]:focus {
+        width: 220px;
+        background-color: #fff;
+        border-color: #66CC75;
+        -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+        -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+        box-shadow: 0 0 5px rgba(109,207,246,.5);
+    }}
+/*--------------------------------------------------------------------------
+                        End Of Top Navigation Bar
+---------------------------------------------------------------------------*/
+
+
+/*****************************************************************************
+-----------------------------------------------------------------------------
+*****************************************************************************/
+
+/*-----------------------------------------------------------------------------
+                    Hoverable Side bar Css
+-------------------------------------------------------------------------------*/
+.main-menu .fa-2x {
+font-size: 2em;
+}
+.main-menu .fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+overflow-y:auto;
+}
+
+.main-menu {
+background:#212121;
+border-right:1px solid #e5e5e5;
+position: fixed;;
+height:100%;
+left:0;
+width:60px;
+top:66px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+
+.main-menu li a:hover{
+    background-color:whitesmoke;
+
+}
+.main-menu li li.nav-item > a{
+        text-decoration:none;
+  		padding:8px 16px;
+  		display:block;
+  		color:#999;
+}
+
+.main-menu li li.nav-item a{
+    margin-left:50px;
+}
+.main-menu li li.nav-item:hover{
+    color:#fff;
+    background-color:whitesmoke;
+}
+
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+
+
+.open-sidebar{
+    width:250px;
+
+}
+
+/*---------------------------------------------------------------------------
+                   End of  Hoverable Side bar Css
+-----------------------------------------------------------------------------*/
+
+
+/*****************************************************************************
+-----------------------------------------------------------------------------
+*****************************************************************************/
+
+/*--------------------------------------------------------------------------    
+                        Hide On Small Screen Sidebar
+----------------------------------------------------------------------------*/
+@media (max-width:768px)
+{
+    .main-menu .fa-2x {
+        font-size: 2em;
+        }
+        .main-menu .fa {
+        position: relative;
+        display: table-cell;
+        width: 60px;
+        height: 36px;
+        text-align: center;
+        vertical-align: middle;
+        font-size:20px;
+        }
+        
+        
+        .main-menu:hover,nav.main-menu.expanded {
+        width:250px;
+        overflow:visible;
+        overflow-y:auto;
+        }
+        
+        .main-menu {
+        background:#212121;
+        border-right:1px solid #e5e5e5;
+        position: fixed;;
+        height:100%;
+        left:0;
+        width:0px;
+        top:111px;
+        overflow:hidden;
+        -webkit-transition:width .05s linear;
+        transition:width .05s linear;
+        -webkit-transform:translateZ(0) scale(1,1);
+        z-index:1000;
+        }
+        
+        .main-menu>ul {
+        margin:7px 0;
+        }
+        
+        .main-menu li {
+        position:relative;
+        display:block;
+        width:250px;
+        }
+        
+        .main-menu li>a {
+        position:relative;
+        display:table;
+        border-collapse:collapse;
+        border-spacing:0;
+        color:#999;
+         font-family: arial;
+        font-size: 14px;
+        text-decoration:none;
+        -webkit-transform:translateZ(0) scale(1,1);
+        -webkit-transition:all .1s linear;
+        transition:all .1s linear;
+          
+        }
+        
+        .main-menu .nav-icon {
+        position:relative;
+        display:table-cell;
+        width:60px;
+        height:36px;
+        text-align:center;
+        vertical-align:middle;
+        font-size:18px;
+        }
+        
+        .main-menu .nav-text {
+        position:relative;
+        display:table-cell;
+        vertical-align:middle;
+        width:190px;
+          font-family: 'Titillium Web', sans-serif;
+        }
+        
+        .main-menu>ul.logout {
+        position:absolute;
+        left:0;
+        bottom:0;
+        }
+        
+        .no-touch .scrollable.hover {
+        overflow-y:hidden;
+        }
+        
+        .no-touch .scrollable.hover:hover {
+        overflow-y:auto;
+        overflow:visible;
+        }
+        
+        a:hover,a:focus {
+        text-decoration:none;
+        }
+        
+        nav {
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        -o-user-select:none;
+        user-select:none;
+        }
+        
+        nav ul,nav li {
+        outline:0;
+        margin:0;
+        padding:0;
+        }
+        
+        .main-menu li a:hover{
+            background-color:whitesmoke;
+        
+        }
+        .main-menu li li.nav-item > a{
+                text-decoration:none;
+                  padding:8px 16px;
+                  display:block;
+                  color:#999;
+        }
+        
+        .main-menu li li.nav-item a{
+            margin-left:50px;
+        }
+        .main-menu li li.nav-item:hover{
+            color:#fff;
+            background-color:whitesmoke;
+        }
+        
+        .area {
+        float: left;
+        background: #e2e2e2;
+        width: 100%;
+        height: 100%;
+        }
+        
+        .open-sidebar{
+            width:250px;
+        }
+        
+}
+/*---------------------------------------------------------------------------
+                   End of  Hide on Small Screen Sidebar
+-----------------------------------------------------------------------------*/
+
+/*****************************************************************************
+-----------------------------------------------------------------------------
+*****************************************************************************/
+
+/*---------------------------------------------------------------------------
+                            Main Content Css
+-----------------------------------------------------------------------------*/
+
+
+.header-margin{
+    margin-left:70px;
+    margin-top:80px;
+    margin-right:10px;
+}
+
+.main{
+    transition:margin-left .5s;
+    padding:15px;
+}
+.main.main-content{
+    margin-left:50px;
+    margin-top:50px;
+}
+.main.main-content > *{
+        margin-top:10px;
+    }
+@media  (max-width:768px)
+{
+    
+    .shift-left{
+        margin-left:0px;
+    }
+    .shift-right{
+       
+        margin-right:-30px;
+    }
+    .main{
+        transition:margin-left .5s;
+        padding:15px;
+    }
+    .main.main-content{
+        margin-left:0px;
+        margin-top:95px;
+    }
+    .main.main-content > *{
+        margin-top:10px;
+    }
+    
+}
+.card-2{
+    box-shadow:0 2px 5px 2px lightgrey;
+}
+.card-3{
+    box-shadow:0 0px 4px 0px lightgrey;
+}
+.width{
+    width:150px;
+}
+
+.card .card-body span.name{
+    color:#999;
+}
+
+#profile{
+    padding:15px;margin-top:-8%;
+}
+@media (max-width:768px){
+    #profile {
+        padding:20px;margin-top:-20%;
+    }
+}
+
+#personal .personal-information{
+    text-align: justify;
+}
+#personal .divider{
+    border-top:2px solid lightgray;
+}
+#personal .user-attr p{
+    font-weight:bold;
+    font-size:13px;
+}
+/*---------------------------------------------------------------------------
+                            End Of Main Content Css
+-----------------------------------------------------------------------------*/
+
+/*****************************************************************************
+-----------------------------------------------------------------------------
+*****************************************************************************/
+
+/*---------------------------------------------------
+                    Chat Panel Css
+-----------------------------------------------------*/
+.chat-panel{
+	min-height:500px;
+	margin:auto;
+	padding:20px;
+	max-width:1100px;
+	margin-bottom:10px;
+
+}
+.chat-list{
+	max-height:400px;
+	overflow-y:auto;
+
+}
+.chat-display{
+	max-height:400px;
+	max-width:700px;
+	border:3px ;
+	margin:auto;
+	padding:10px;
+	border:5px solid  #05728f  ;
+	background-color:lightgrey;
+	overflow-y:scroll;
+	margin-top:30px;	
+
+}
+
+
+.input_msg_write input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border:  none;
+  color: #4c4c4c;
+  font-size: 15px;
+  min-height: 48px;
+  width: 100%;
+
+}
+
+.type_msg {
+    border-top: 1px solid #c4c4c4;position: relative;
+}
+    
+.msg_send_btn {
+  background: #05728f none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  height: 33px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 33px;
+}
+
+.chat-text{
+	
+	margin:auto;
+	margin-top:-5px;
+	padding-left:2px;
+}
+
+.fa{
+    color:#999;
+	margin-left:0px;
+	margin-right:8px;
+}
+
+.time_date {
+  color: #747474;
+  display: block;
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+
+.outgoing_msg{ 
+    overflow:hidden; margin:26px 0 26px;
+}
+
+.sent_msg {
+  float: right;
+  width: 46%;
+}
+
+ .sent_msg p {
+  background: #05728f none repeat scroll 0 0;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 0;
+  color:#fff;
+  padding: 5px 10px 5px 12px;
+  width:100%;
+}
+
+.incoming_msg_img {
+  display: inline-block;
+  width: 6%;
+}
+
+.received_msg {
+  display: inline-block;
+  padding: 0 0 0 10px;
+  vertical-align:top;
+  width: 92%;
+ }
+ .received_withd_msg { 
+     width: 57%;
+    }
+
+ .received_withd_msg p {
+  background: #ebebeb none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #646464;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px 5px 12px;
+  width: 100%;
+}
+/*---------------------------------------------------
+                   End OF  Chat Panel Css
+-----------------------------------------------------*/
+
+/*---------------------------------------------------
+                   Scroll Bar
+-----------------------------------------------------*/
+
+.scrollbar-pink::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px; }
+  
+  .scrollbar-pink::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5; }
+  
+  .scrollbar-pink::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #ec407a; }
+  
+  .scrollbar-indigo::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px; }
+  
+  .scrollbar-indigo::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5; }
+  
+  .scrollbar-indigo::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #3f51b5; }
+  
+  .scrollbar-black::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px; }
+  
+  .scrollbar-black::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5; }
+  
+  .scrollbar-black::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #000; }
+  
+  .scrollbar-lady-lips::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px; }
+  
+  .scrollbar-lady-lips::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5; }
+  
+  .scrollbar-lady-lips::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff9a9e), color-stop(99%, #fecfef), to(#fecfef));
+    background-image: -webkit-linear-gradient(bottom, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); }
+  
+  .scrollbar-near-moon::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px; }
+  
+  .scrollbar-near-moon::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5; }
+  
+  .scrollbar-near-moon::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#5ee7df), to(#b490ca));
+    background-image: -webkit-linear-gradient(bottom, #5ee7df 0%, #b490ca 100%);
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%); }
+  
+  .bordered-pink::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    border: 1px solid #ec407a; }
+  
+  .bordered-pink::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: none; }
+  
+  .bordered-indigo::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    border: 1px solid #3f51b5; }
+  
+  .bordered-indigo::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: none; }
+  
+  .bordered-black::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    border: 1px solid #000; }
+  
+  .bordered-black::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: none; }
+  
+  .square::-webkit-scrollbar-track {
+    border-radius: 0 !important; }
+  
+  .square::-webkit-scrollbar-thumb {
+    border-radius: 0 !important; }
+  
+  .thin::-webkit-scrollbar {
+    width: 6px; }
+/*---------------------------------------------------
+                 End Of  Scroll Bar
+-----------------------------------------------------*/
+
+.pt-3-half {
+    padding-top: 1.4rem;
+}
+
